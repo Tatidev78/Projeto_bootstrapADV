@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap class</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="fundo-cor">
+    <header>
+        <div class="navbar navbar-expand-lg  p-2  ">
+            <div class="container-fluid d-flex align-items-center" >
+                <img  class="img-ajuste me-4 mb-2" src="./woman.png" alt="imagem de uma mulher de costas" >
+                    <h1 class="display-5 me-5"><strong><u>Inner Connection</u></strong></h1>                  
+                    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-conteudo">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <nav class="collapse navbar-collapse justify-content-end " id="navbar-conteudo">
+                    <form class="d-flex mb-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary me-4" type="submit">Search</button>
+                      </form>                    
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item fw-bold">
+                            <button class="nav-link active">Home</button>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <button class="nav-link">Reiki</button>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <button class="nav-link">Aromaterapia</button>
+                        </li>
+                        <li class="nav-item fw-bold dropdown">
+                            <button class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" style="border: none; background: none; color: #0d6efd; font: inherit; cursor: pointer;">Videos</button>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item justify-content-center d-flex dropdown-menu-dark" style="border: none;  color: #0d6efd; padding: 0; font: inherit; cursor: pointer;" onclick="location.href='#gridconteudo'">Videos para Meditação</button>
+                            </div>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <button class="nav-link">Contato</button>
+                        </li>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Carrossel de Imagens -->
+     <main class="main-color carousel slide" data-bs-ride="carousel" id="carousel-grupo">
+        <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img  class="d-block w-100" src="./aromaterapia2.jpg" alt="imagem aromaterapia">
+                <div class="carousel-caption">
+                    <h2>Aromaterapia</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img  class="d-block w-100" src="./chacras2.jpg" alt="imagem meditação">
+                <div class="carousel-caption">
+                    <h2>Meditação</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="./reiki4.png" alt="imagem reiki">
+                <div class="carousel-caption">
+                    <h2>Reiki</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-grupo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carousel-grupo" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+             <span class="visually-hidden">Next</span>
+         </button>
+    </main>
+    <!-- Layout com Grid Responsivo e Cards -->
+    <div class="container mt-5"> 
+        <div class="row"> 
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> 
+                <div class="card h-100"> 
+                    <img src="./aromaterapia.jpg" class=" card card-img-top" alt="Imagem aromaterapia"> 
+                    <div class="card-body  d-flex flex-column align-items-center"> 
+                        <h5 class="card-title">Aromaterapia</h5> 
+                        <p class="card-text fs-5">A aromaterapia é uma prática terapêutica que utiliza óleos essenciais extraídos de plantas para promover bem-estar físico e emocional. Esses óleos podem ser inalados, aplicados na pele ou usados em banhos para proporcionar diferentes benefícios. Os óleos essenciais são extraídos de plantas e flores. Cada óleo possui propriedades únicas que podem afetar o corpo e a mente de diferentes maneiras, como promover o relaxamento, melhorar a concentração ou até fortalecer o sistema imunológico.</p> 
+                        <a href="#" class="btn btn-primary mt-auto ">Conheça mais</a>
+                     </div>
+                 </div> 
+            </div> 
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 text-justify"> 
+                <div class="card h-100"> 
+                    <img src="./chacras1.jpg" class="card-img-top" alt="Imagem alinhament0 chacras"> 
+                    <div class="card-body d-flex flex-column align-items-center">
+                         <h5 class="card-title">Meditação</h5> 
+                         <p class="card-text fs-5">A meditação é uma prática que oferece inúmeros benefícios, incluindo a redução do estresse e da ansiedade, melhoria da concentração e do foco, além de um sono mais reparador. Quando praticada regularmente ela promove o autoconhecimento e aumenta a sensação de bem-estar, podendo fortalecer o sistema imunológico e ajudar a controlar a pressão arterial. Diferentes tipos de meditação oferecem benefícios variados, tornando-se uma prática versátil e adaptável às necessidades de cada indivíduo.</p>
+                          <a href="#" class="btn btn-primary mt-auto">Conheça mais</a> 
+                    </div> 
+                </div>
+             </div> 
+             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                 <div class="card h-100"> 
+                    <img src="./REiki 1.jpg" class="card-img-top" alt="Imagem reiki"> 
+                    <div class="card-body d-flex flex-column align-items-center"> 
+                        <h5 class="card-title">Reiki</h5> 
+                        <p class="card-text fs-5">Reiki é uma prática de cura japonesa que canaliza a energia vital através das mãos para promover equilíbrio e bem-estar. Originado no Japão no início do século XX, Reiki ajuda a reduzir o estresse, aliviar a dor e melhorar a saúde mental e emocional. A técnica busca harmonizar a energia do corpo, proporcionando uma sensação de relaxamento profundo e revitalização, é uma prática de cura energética que vai além dos benefícios físicos. Acredita-se que ele atua também no nível emocional, mental e espiritual.</p>
+                         <a href="#" class="btn btn-primary mt-auto">Conheça mais</a> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+    <div class="container mt-5 pt-2 border-top border-bottom border-3 border-primary-subtle d-flex justify-content-center" id="gridconteudo">
+        <h1>Videos de Inner Connection</h1>
+    </div>
+    <div class="container mt-5"> 
+        <div class="row"> 
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> 
+                <div class="card h-100"> 
+                    <img src="./Noite1.jpg" class="card-img-top" alt="Imagem noite estrelada"> 
+                    <div class="card-body d-flex flex-column align-items-center"> 
+                        <h5 class="card-title">423 Hertz para dormir</h5> 
+                        <p class="card-text fs-5">A frequência de 423 Hz é conhecida por ajudar a reduzir o estresse e a ansiedade, criando um ambiente mais calmo e relaxante, utilizada em terapias sonoras para promover o equilíbrio emocional e a clareza mental. Muitos relatam que ouvir música ou sons na frequência de 423 Hz antes de dormir pode melhorar a qualidade do sono, ajudando a adormecer mais rapidamente e a permanecer dormindo por mais tempo. Além disso, algumas pessoas relatam uma sensação de renovação e revitalização ao acordar após uma noite de sono acompanhada por esses sons.</p> 
+                        <a href="https://youtu.be/3HlL8aAdcIQ" class="btn btn-primary mt-auto" target="_blank">Ouça aqui</a>
+                     </div>
+                 </div> 
+            </div> 
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 text-justify"> 
+                <div class="card h-100"> 
+                    <img src="./asas.png" class="card-img-top" alt="Imagem alinhament0 chacras"> 
+                    <div class="card-body d-flex flex-column align-items-center">
+                         <h5 class="card-title">432 Hertz de anjos</h5> 
+                         <p class="card-text fs-5">CConecte-se com a energia protetora e curativa do Arcanjo Miguel. Esta sintonia lhe trará paz, força e um escudo divino para seu espírito. Deixe-se envolver pela luz e proteção de Miguel. Esta frequência é conhecida por suas propriedades de proteção, cura e limpeza espiritual. Muitas pessoas acreditam que ouvir sons ou músicas na frequência de 432 Hz pode ajudar a promover um ambiente de paz e bem-estar. Ela auxilia na harmonização do corpo e da mente, proporcionando uma sensação de equilíbrio. Ao utilizar essa frequência, você pode sentir uma conexão mais profunda com a sua essência espiritual.</p>
+                          <a href="https://youtu.be/8UmphMh5gwI" class="btn btn-primary mt-auto" target="_blank">Ouça aqui</a> 
+                    </div> 
+                </div>
+             </div> 
+             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                 <div class="card h-100"> 
+                    <img src="./mar.jpg" class="card-img-top" alt="imagem do oceano" > 
+                    <div class="card-body d-flex flex-column align-items-center"> 
+                        <h5 class="card-title">Relaxe ouvindo sons de oceano</h5> 
+                        <p class="card-text fs-5">O som do oceano oferece inúmeros benefícios para a mente e o corpo. O ritmo tranquilo das ondas ajuda a reduzir o estresse e a ansiedade, promovendo um estado de relaxamento profundo. É eficaz para melhorar a qualidade do sono, ajuda a combater a insônia e permitindo um descanso mais reparador. Além disso, ouvir o som do oceano pode aumentar a concentração e o foco, especialmente durante atividades criativas. A sensação de conexão com a natureza proporcionada pelo som das ondas também contribui para um bem-estar geral, ajudando a relaxar os músculos e a aliviar a tensão física</p>
+                         <a href="https://youtu.be/kioTjdPOjVk"class="btn btn-primary mt-auto" target="_blank">Ouça aqui</a> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+    <footer>
+        <div class="text-center">
+            <div class="container p-4 pb-0 border-top border-bottom border-3 border-primary-subtle">
+                <section>
+                    <a class="btn btn-primary btn-floating" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="btn btn-primary btn-floating" href="#"><i class="bi bi-github"></i></a>
+                    <a class="btn btn-primary btn-floating" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-primary btn-floating" href="#"><i class="bi bi-instagram"></i></a>
+                </section>
+            </div>
+            <div class="text-center">
+                &copy; 2025 - TODOS OS DIREITOS RESERVADOS - INNER CONECTION
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
